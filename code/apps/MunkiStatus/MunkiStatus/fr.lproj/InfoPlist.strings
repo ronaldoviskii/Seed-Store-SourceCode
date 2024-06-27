@@ -1,0 +1,5 @@
+/* Localized versions of Info.plist keys */
+
+"CFBundleName" = "Centre de gestion des logiciels";
+"CFBundleDisplayName" = "Centre de gestion des logiciels";
+NSHumanReadableCopyright = "Copyright © 2024-2024 MACSOLUTION INFORMATICA LTDA";

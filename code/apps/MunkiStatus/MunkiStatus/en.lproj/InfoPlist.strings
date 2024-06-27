@@ -1,0 +1,5 @@
+/*  InfoPlist.strings */
+
+"CFBundleName" = "MunkiStatus";
+"CFBundleDisplayName" = "MunkiStatus";
+NSHumanReadableCopyright = "Copyright © 2024-2024 MACSOLUTION INFORMATICA LTDA";

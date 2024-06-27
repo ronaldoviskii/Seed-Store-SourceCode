@@ -1,0 +1,5 @@
+/* Localized versions of Info.plist keys */
+
+"CFBundleName" = "Managed Software Center";
+"CFBundleDisplayName" = "Managed Software Center";
+NSHumanReadableCopyright = "Copyright © 2024-2024 MACSOLUTION INFORMATICA LTDA";

@@ -1,0 +1,5 @@
+/* Localized versions of Info.plist keys */
+
+"CFBundleName" = "Центр Управления ПО";
+"CFBundleDisplayName" = "Центр Управления ПО";
+NSHumanReadableCopyright = "Copyright © 2024-2024 MACSOLUTION INFORMATICA LTDA";
