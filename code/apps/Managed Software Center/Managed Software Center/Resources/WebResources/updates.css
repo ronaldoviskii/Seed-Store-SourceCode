@@ -231,6 +231,7 @@ div.main .title h2 {
     display: inline-block;
     font: bold 32px -apple-system, "Helvetica Neue", 'Helvetica';
     color: var(--text-color-normal);
+    margin-top: 20px;
 }
 div.updates table {
     -webkit-box-orient: vertical;
@@ -507,20 +508,38 @@ body.scanning .non-scan-progress,body.page-not-ready .non-scan-progress,body:not
 div.lockup.small.detailed.update {
     /*border-bottom: 1px solid var(--line-color);*/
     padding-bottom: 15px;
+
 }
 
 div.lockup .row1,
 div.lockup .row2 {
     display: flex;
+    flex-direction: column;
+}
+
+div.artworkU {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+div.msc-button.small1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 div.lockup .row1 .list {
     flex-grow: 1;
     border-bottom: 0;
+    margin-top: 150px;
+    background-color: red;
 }
 
 div.lockup .row1 .list.items {
     height: auto;
+    width: 100%;
 }
 
 div.msc-button-inner.will-be-installed,
@@ -546,7 +565,8 @@ div.lockup .row2 a {
 
 @media only screen and (max-width: 1279px) {
     div.lockup.small.detailed.update {
-        width: calc(50% - 20px);
+        width: 260px;
+        height: 230px;
     }
     div.lockup.small.detailed.update:not(:nth-of-type(2n)) {
       margin-right: 40px;
@@ -558,7 +578,8 @@ div.lockup .row2 a {
 
 @media only screen and (min-width: 1280px) {
     div.lockup.small.detailed.update {
-        width: calc(33.333% - 27px);
+        width: 260px;
+        height: 230px;
     }
     div.lockup.small.detailed.update:not(:nth-of-type(3n)) {
       margin-right: 40px;
@@ -587,7 +608,7 @@ div.lockup .row2 a {
 .modal-content {
   background-color: var(--modal-background-color);
   margin: 20% auto;
-  padding: 10px;
+  padding:1;
   border-radius: 8px;
   width: 50%;
 }

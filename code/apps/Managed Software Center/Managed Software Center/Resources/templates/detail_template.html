@@ -59,6 +59,31 @@
                         <div class="lockup-container content" data-columns-current="1">
                             <div class="content-and-controls detail-page information-list">
                                 <div class="lockup small detailed option information-item">
+                                    <!-- DEVELOPER -->
+                                    <div class="label">${developerLabel}</div>
+                                    <a href="${developer_link}">${developer_escaped}</a>
+                                    <br>
+                                    <!-- SIZE -->
+                                    <div class="label">${sizeLabel}</div>
+                                    ${size}
+                                    <br>
+                                    <!-- CATEGORY -->
+                                    <div class="label">${categoryLabel}</div>
+                                    <a href="${category_link}">${category}</a>
+
+                                    <!-- VERSION -->
+                                    <div class="label">${versionLabel}</div>
+                                    ${display_version}
+
+                                    <!-- STATUS -->
+                                    <div class="label">${statusLabel}</div>
+                                    <span class="${status}" id="${name_escaped}_status_text">
+                                        <span id="${name_escaped}_status_text_span">
+                                            ${status_text}
+                                        </span>
+
+                                </div>
+                                <!-- <div class="lockup small detailed option information-item">
                                     <div class="label">${developerLabel}</div>
                                     <a href="${developer_link}">${developer_escaped}</a>
                                 </div>
@@ -97,7 +122,7 @@
                                     <div class="label warning">${dueLabel}</div>
                                     <span class="warning"${short_due_date}</span>
                                     <span class="warning">${restart_action_text}</span>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>

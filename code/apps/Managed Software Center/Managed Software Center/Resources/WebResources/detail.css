@@ -216,3 +216,7 @@ div.more-by div.msc-button-inner {
     }
 }
 
+.detail-page {
+    display: flex;
+    gap: 50px;
+}
