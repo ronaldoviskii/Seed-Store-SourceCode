@@ -1,18 +1,17 @@
 #!/bin/bash
 #
-# Check out Munki source from GitHub and build a distribution package.
-
+# Check out Seed-Store-SourceCode from GitHub and build a distribution package.
 
 # Defaults.
-PKGID="com.googlecode.munki"
+PKGID="com.googlecode.seed-store"
 OUTPUTDIR="$(pwd)"
 CHECKOUTREV="HEAD"
 BRANCH="main"
-
+REPO_URL="https://github.com/ronaldoviskii/Seed-Store-SourceCode.git"
 
 usage() {
     cat <<EOF
-Usage: $(basename "$0") [-b branch ] [-r revision] [<make_munki_mpkg.sh options>]"
+Usage: $(basename "$0") [-b branch] [-r revision] [<make_munki_mpkg.sh options>]"
 
     -b branch   Git branch to clone (main is the default)
     -r revision Git revision to check out (HEAD is the default)
@@ -96,7 +95,7 @@ if [ $# -ne 0 ]; then
     exit 1
 fi
 
-MUNKIDIR="$(pwd)/munki-git"
+MUNKIDIR="$(pwd)/seed-store-git"
 
 # Sanity checks.
 if ! which git 1>/dev/null ; then
@@ -106,11 +105,11 @@ if ! which git 1>/dev/null ; then
     exit 1
 fi
 
-echo "Cloning munki repo branch $BRANCH from github..."
-git clone --branch "$BRANCH" --no-checkout -- https://github.com/munki/munki.git "$MUNKIDIR"
+echo "Cloning seed-store repo branch $BRANCH from github..."
+git clone --branch "$BRANCH" --no-checkout -- "$REPO_URL" "$MUNKIDIR"
 CLONE_RESULT="$?"
 if [ "$CLONE_RESULT" != "0" ]; then
-    echo "Error cloning munki repo: $CLONE_RESULT" 1>&2
+    echo "Error cloning seed-store repo: $CLONE_RESULT" 1>&2
     exit 1
 fi
 
